@@ -1,0 +1,13 @@
+.title .button {
+  margin-bottom: 64px;
+}
+
+.title__text {
+  max-width: 500px;
+  margin-bottom: 17px;
+}
+
+.subtitle__text {
+  margin-bottom: 40px;
+  font-size: 17px;
+}

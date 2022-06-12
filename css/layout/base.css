@@ -1,0 +1,151 @@
+html {
+	font-size: 17px;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font: 300 15px/1.42 'Open Sans', arial, sans-serif;
+  color: #666666;
+  background: #fff;
+	margin: 0;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 1px;
+  line-height: 44px;
+
+  color: #000000;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+.button {
+  background: #FEDB3F;
+  font-size: 14px;
+  border-radius: 100px;
+  padding: 21px 41px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.25s;
+  color: #000000;
+  border: none;
+}
+
+.button:hover {
+  background: #FFD517;
+}
+
+.tag {
+  font-size: 13px;
+  color: #303030;
+  padding: 8px 25px;
+  border-radius: 50px;
+  background: #E7E7E7; 
+}
+
+.tag--bg--colored {
+  background: #F2D4C9;
+}
+
+/* Переходы на ховер */
+
+.button, button, .socials__link, .menu__link, .pager__link, .dropdown__menu {
+  transition-duration: 0.15s;
+  transition-property:  color, background, opacity;
+}
+
+.button, button, .socials__link, .menu__link, .pager__link, .dropdown__menu :hover {
+  transition-duration: 0.15s;
+  transition-property:  color, background, opacity;
+}
