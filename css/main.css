@@ -398,8 +398,7 @@ h6 {
 
 h1 {
   font-weight: 600;
-  font-size: 2.625rem;
-  line-height: 3.625rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -473,7 +472,7 @@ img {
 
 .button {
   background: #FEDB3F;
-  font-size: 0.9375rem;
+  font-size: 15px;
   border-radius: 100px;
   padding: 1.3125rem 2.5625rem;
   font-weight: 800;
@@ -555,7 +554,12 @@ img {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-top: 1.75rem;
-  margin-bottom: 24.375rem;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 390px;
+  }
 }
 
 .menu {
@@ -715,7 +719,7 @@ img {
   max-height: none;
 }
 .features__text {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .section {
