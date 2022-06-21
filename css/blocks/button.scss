@@ -1,0 +1,12 @@
+.button {
+
+  &--transparent {
+    background: transparent;
+    color: white;
+
+    &:hover {
+      background: transparent;
+      color: #FEDB3F;
+    }
+  }
+}

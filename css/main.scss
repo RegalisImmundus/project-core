@@ -1,0 +1,39 @@
+$containerWidth: 940px;
+$baseFontSize: 15px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+@import "media";
+
+//layout
+@import "layout/normalize";
+@import "layout/base";
+
+//hero section
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/hamburger";
+@import "blocks/title";
+@import "blocks/features";
+
+//benefits section
+@import "blocks/section";
+@import "blocks/benefits";
+@import "blocks/benefit";
+@import "blocks/headline";
+
+//review section
+@import "blocks/reviews";
+@import "blocks/interactive-avatar";
+
+//order section
+@import "blocks/order-section";
+@import "blocks/form";
+@import "blocks/radio";
+@import "blocks/button";
+
+
+//additions
+@import "blocks/fixed-menu";
+@import "blocks/svg";

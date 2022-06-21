@@ -1,0 +1,35 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  
+  @include tablets {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+  }  
+
+  .button {
+    margin-bottom: 4rem;
+  }
+}
+
+.title__text {
+  max-width: 31.25rem;
+  margin-bottom: 1.0625rem;
+
+  @include tablets {
+    max-width: none;
+    font-size: 3rem;
+  }  
+
+  @include phones {
+    font-size: 36px;
+  }  
+}
+
+.subtitle__text {
+  margin-bottom: 2.5rem;
+  font-size: 17px;
+}

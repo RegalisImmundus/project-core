@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  margin-bottom: 3.625rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    max-width: 8.875rem;
+    margin-right: 1.875rem;
+
+    &:last-child {
+      margin-right: 0rem;
+    }
+  }
+
+  &__img-wrap {
+    margin-right: .875rem;
+  }
+
+  &__img {
+    max-width: none;
+    max-height: none;
+  }
+
+  &__text {
+    font-size: .875rem;
+  }
+}

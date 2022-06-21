@@ -1,0 +1,163 @@
+html {
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font: 300 15px/1.42 'Open Sans', arial, sans-serif;
+  color: #666666;
+  background: #fff;
+	margin: 0;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.625rem;
+  line-height: 3.625rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.625rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: .0625rem;
+  line-height: 2.75rem;
+
+  color: #000000;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: $containerWidth;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-container {
+  margin-top: auto;
+}
+
+.button {
+  background: #FEDB3F;
+  font-size: .9375rem;
+  border-radius: 100px;
+  padding: 1.3125rem 2.5625rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.25s;
+  color: #000000;
+  border: none;
+}
+
+.button:hover {
+  background: #FFD517;
+}
+
+.tag {
+  font-size: .8125rem;
+  color: #303030;
+  padding: .5rem 1.5625rem;
+  border-radius: 3.125rem;
+  background: #E7E7E7; 
+}
+
+.tag--bg--colored {
+  background: #F2D4C9;
+}
+
+/* Переходы на ховер */
+
+.button, button, .socials__link, .menu__link, .pager__link, .dropdown__menu {
+  transition-duration: 0.15s;
+  transition-property:  color, background, opacity;
+}
+
+.button, button, .socials__link, .menu__link, .pager__link, .dropdown__menu :hover {
+  transition-duration: 0.15s;
+  transition-property:  color, background, opacity;
+}

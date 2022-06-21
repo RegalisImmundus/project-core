@@ -1,0 +1,21 @@
+.section {
+  min-height: 40.625rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 2.5625rem;
+  line-height: 3.625rem;
+  margin-bottom: 3.75rem;
+}
+
+.reviews-section__title {
+  margin-bottom: 1.75rem;
+  @include phones {
+    font-size: 36px;
+   }
+}

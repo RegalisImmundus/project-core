@@ -19,7 +19,9 @@
         <div class="container greetings__container">
           <header class="header">
             <a href="#" class="logo">
-              <img src="./img/logo.png" alt="logo" class="logo">
+              <svg class="logo-icon">
+                <use alt="logo" xlink:href="./sprite.svg#logo"></use>
+              </svg>
             </a>
             <nav class="menu">
               <ul class="menu__list">
@@ -46,12 +48,19 @@
                 </li>
               </ul>
             </nav>
-            <address class="contacts">
-              <div class="contacts__img-wrap">
-                <img src="./img/phone.png" alt="phone" class="contacts__img">
+            <address class="contacts header__contacts">
+              <div class="contacts__icon-outer">
+                <svg class="contacts__icon">
+                  <use alt="phone" xlink:href="./sprite.svg#phone"></use>
+                </svg>
               </div>
               <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
             </address>
+            <a href="" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+            </a>
           </header>
           <div class="title">
             <h1 class="title__text">Профессиональные доски для серфинга</h1>
@@ -60,23 +69,29 @@
               <a href="#" class="button">Заказать</a>
             </div>
           </div>
-          <div class="greetings__features">
+          <div class="hero__features">
             <ul class="features features__list">
               <li class="features__item">
                 <div class="features__img-wrap">
-                  <img src="./img/board.png" alt="features-board" class="features__img">
+                  <svg class="features__img">
+                    <use alt="board" xlink:href="./sprite.svg#board"></use>
+                  </svg>
                 </div>
                 <div class="features__text">Уникальный дизайн</div>
               </li>
               <li class="features__item">
                 <div class="features__img-wrap">
-                  <img src="./img/sawmill.png" alt="features-sawmill" class="features__img">
+                  <svg class="features__img">
+                    <use alt="sawmill" xlink:href="./sprite.svg#sawmill"></use>
+                  </svg>
                 </div>
                 <div class="features__text">Прочные материалы</div>
               </li>
               <li class="features__item">
                 <div class="features__img-wrap">
-                  <img src="./img/truck.png" alt="features-truck" class="features__img">
+                  <svg class="features__img features__img--truck">
+                    <use alt="truck" xlink:href="./sprite.svg#truck"></use>
+                  </svg>
                 </div>
                 <div class="features__text">Быстрая доставка</div>
               </li>
@@ -96,7 +111,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/fit.png" alt="measured human" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use alt="measurment" xlink:href="./sprite.svg#fit"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -113,7 +130,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/plant.png" alt="plant" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use alt="plant" xlink:href="./sprite.svg#plant"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -129,7 +148,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
-                  <img src="./img/board-2.png" alt="dual surfboard" class="benefit__icon">
+                  <svg class="benefit__icon">
+                    <use alt="surfboards" xlink:href="./sprite.svg#boards"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -243,25 +264,26 @@
                   <textarea class="form__input form__input--textarea"></textarea>
                 </label>
               </div>
-              <div class="form__controls">
-                <label class="radio">
-                  <input type="radio" name="option" class="radio__elem">
-                  <div class="radio__visible"></div>
-                  <div class="radio__title">Потребуется сдача</div>
-                </label>
-
-                <label class="radio">
-                  <input type="radio" name="option" class="radio__elem">
-                  <div class="radio__visible"></div>
-                  <div class="radio__title">Оплата по карте</div>
-                </label>
-              </div>
-              <div class="form__controls">
-                <label class="radio radio--checkbox">
-                  <input type="checkbox" name="option" class="radio__elem">
-                  <div class="radio__visible"></div>
-                  <div class="radio__title">Оплата по карте</div>
-                </label>
+              <div class="form__controls-array">
+                <div class="form__controls">
+                  <label class="radio">
+                    <input type="radio" name="option" class="radio__elem">
+                    <div class="radio__visible"></div>
+                    <div class="radio__title">Оплата наличными</div>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="option" class="radio__elem">
+                    <div class="radio__visible"></div>
+                    <div class="radio__title">Оплата по карте</div>
+                  </label>
+                </div>
+                <div class="form__controls">
+                  <label class="radio radio--checkbox">
+                    <input type="checkbox" name="option" class="radio__elem">
+                    <div class="radio__visible"></div>
+                    <div class="radio__title">Не перезванивать</div>
+                  </label>
+                </div>
               </div>
               <div class="form__buttons">
                 <input type="submit" value="Заказать" class="button">
