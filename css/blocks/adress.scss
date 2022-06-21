@@ -1,0 +1,22 @@
+.adress-array {
+  display: flex;
+  flex-direction: column;
+
+  .contacts__icon {
+    fill: black;
+  }
+
+  @include phones {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.adress {
+  font-size: 1.2125rem;
+  line-height: 1.5rem;
+
+  @include phones {
+    margin-bottom: 0.6rem;
+  }
+}

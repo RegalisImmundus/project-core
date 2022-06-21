@@ -1,11 +1,11 @@
 .hamburger {
- width: 24px;
- height: 22px;
+ width: 1.5rem;
+ height: 1.375rem;
  display: inline-flex;
  flex-direction: column;
  justify-content: space-between;
  display: none;
-
+ margin-top: .75rem;
  @include tablets {
   display: inline-flex;
  }
@@ -13,8 +13,8 @@
   &__plank {
     display: block;
     background: #fff;
-    height: 4px;
-    border-radius: 10px;
+    height: .25rem;
+    border-radius: .625rem;
   }
 }
 

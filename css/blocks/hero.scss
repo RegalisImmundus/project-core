@@ -1,18 +1,19 @@
 .hero {
-  background: url(./../img/greetigs-bg.png) no-repeat center;
+  background: url(./../img/hero-bg.png) no-repeat bottom;
   background-size:cover;
   height: 100vh;
   filter: drop-shadow(0rem .25rem .25rem rgba(0, 0, 0, 0.25));
   color: #fff;
+
   @include tablets {
-    background-position: 82%;
+    background: none;
   }
 
   .button {
     @include phones {
       font-weight: 800;
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 1.125rem;
+      line-height: 1.5625rem;
     }
   }
 }
@@ -21,5 +22,21 @@
 
   @include tablets {
     display: none;
+  }
+}
+
+.hero__over-header {
+  @include tablets {
+    background: #1968B1;
+    height: 8vh;
+  }
+}
+
+.hero__over-title {
+  @include tablets {
+    background: url(./../img/hero-bg-mobile.png) no-repeat center;
+    background-size:cover;
+    height: 92vh;
+    display: flex;
   }
 }

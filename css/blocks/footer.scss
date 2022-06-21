@@ -1,0 +1,26 @@
+.footer {
+  background: #fff;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    @include phones {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-subitem {
+    @include phones {
+      margin-bottom: 1.125rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

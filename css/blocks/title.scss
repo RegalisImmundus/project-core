@@ -21,15 +21,23 @@
 
   @include tablets {
     max-width: none;
-    font-size: 3rem;
+    font-size: 2.7rem;
   }  
 
   @include phones {
-    font-size: 36px;
+    font-size: 2.25rem;
   }  
 }
 
 .subtitle__text {
   margin-bottom: 2.5rem;
-  font-size: 17px;
+  font-size: 1.0625rem;
+}
+
+.title__container {
+  @include tablets {
+    max-height: inherit;
+    display: flex;
+    margin-top: 6.25rem;
+  }  
 }

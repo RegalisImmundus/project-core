@@ -1,0 +1,18 @@
+.socials {
+  display: flex;
+}
+
+.socials-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.socials__item {
+  display: inline-block;
+  vertical-align: middle; 
+  margin-right: 12px;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
