@@ -77,7 +77,10 @@
 .form__controls {
  display: flex;
  flex-wrap: wrap;
- justify-content: center;
+
+ @include phones {
+  justify-content: center;
+  }
 }
 
 .form__controls-array {
